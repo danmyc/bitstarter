@@ -1,6 +1,6 @@
 var express = require('express');
 
-// var buf = new Buffer(256);
+var buf = new Buffer(256);
 // len = buf.write(fs.readFileSync('./index.html', 'utf-8'), 0);
 
 
