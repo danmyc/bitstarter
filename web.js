@@ -1,4 +1,5 @@
 var express = require('express');
+var buffer = new buffer(50);
 var app = express();
 app.use(express.logger());
 
