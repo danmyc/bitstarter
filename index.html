@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type"text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">;    
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">    
     <style type="text/css">
 
       /* Large desktop */
@@ -28,18 +28,29 @@
         }
       }
 
+      /* All form factors */
+
+      /* Main body and headings */
 
       body {
-        padding-top: 20px;
-        padding-bottom: 40px;
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       }
-      .container {
-        width: 960px;
+      .heading, .subheading {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        text-align: center;
       }
       p.lead {
-        padding-top: 15px;
+        padding-top: 1.5%;
+        font-size: 24px;
+        line-height: 30px;
       }
-      .navigation, .pitch, .section1, .section2, .faq, .footer {
+      p {
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+
+      .pitch, .section1, .section2, .faq, .footer {
         padding: 10px 0px 10px 0px;
       }
       .video, .thermometer, .order, .social {
@@ -67,30 +78,40 @@
     <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
-	<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="nav-collapse">
-	  <span  class="icon-bar"></span> 
-	  <span  class="icon-bar"></span>
-	  <span  class="icon-bar"></span>
-	</button>
-	<a class="brand" href="#">Bitstarter</a>
-	<div class="nav-collapse collapse">
-	  <ul class="nav">
-	    <li class="active"><a href="#">Home</a></li>
-	    <li><a href="#about">About</a></li>
-	    <li><a href="#contact">Contact</a></li>
-	  </ul>
+	<div class="container">
+	  <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="nav-collapse">
+	    <span  class="icon-bar"></span> 
+	    <span  class="icon-bar"></span>
+	    <span  class="icon-bar"></span>
+	  </button>
+	  <a class="brand" href="#">Bitender</a>
+	  <div class="nav-collapse collapse">
+	    <ul class="nav">
+	      <li class="active"><a href="#">Home</a></li>
+	      <li><a href="#about">About</a></li>
+	      <li><a href="#contact">Contact</a></li>
+	    </ul>
+	  </div><!--/.nav-collapse -->
 	</div>
       </div>
     </div>
 
+    <!-- We use row-fluid inside containers to achieve a resizeable layout. -->
+    <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
+    <!-- http://stackoverflow.com/a/12270322 -->
     <div class="container">
-      <div class"row heading">
+      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
+      <!-- www.google.com/fonts/specimen/Ubuntu -->
+      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
+      <div class="row-fluid heading">
 	<div class="span12">
 	  <h1>Dibyo's Product</h1>
 	</div>
       </div>
-      <div class="row subheading">
+      <div class="row-fluid subheading">
 	<div class"span12">
+	  <!-- Special typography from Bootstrap for lead paragraph. -->
+	  <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
 	  <p class="lead">This is my first try at a bitstarter project.</p>
 	</div>
       </div>
