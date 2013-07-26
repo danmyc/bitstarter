@@ -70,12 +70,17 @@
       .actions {
         background-color: #343434;
         padding: 3% 0%;
+        
       }
       .video, .thermometer, .order, .social, .statistics {
         text-align: center;
       }
       .statistics h3, .statistics p {
         color: white;
+      }
+      .thermometer {
+        margin: 0px 0%;
+        indent: 0%;
       }
 
       /* Marketing Copy and Footer */
@@ -149,7 +154,7 @@
 
 	<!-- We define a new 'actions' div to contain statistics, order and share buttons. -->
 	<div class="span5 actions">
-	  <div class="span8 offset2">
+	  <div class="span12">
 	    <div class="statistics">
 	      <div class="span4">
 		<!-- linediv-l and linediv-r give dividing lines that look different in horizontal and vertical layouts, illustrating media queries. -->
@@ -169,7 +174,7 @@
 	      </div>
 	    </div>
 	  </div>
-	  <div class="span10 offset1">
+	  <div class="span12" style="margin: 1% 0%;">
 	    <!-- Bootstrap progress bar -->
 	    <!-- http://twitter.github.io/bootstrap/components.html#progress -->
 	    <div class="thermometer progress active">
@@ -177,16 +182,16 @@
 	      <div class="bar bar-warning" style="width: 40%;"></div>
 	    </div>
 	  </div>
-	  <div class="span6 offset3 order">
+	  <div class="order" style="margin: 3.5% 0%;">
 	    <!-- Standard Bootstrap button. -->
 	    <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
 	    <button class="btn btn-success btn-large">Preorder</button>
 	  </div>
-	  <div class="span8 offset2 social">
+	  <div class="social">
 	    <!-- Social buttons are not included in default Bootstrap. -->
 	    <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-	    <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-	    <button class="btn btn-facebook" href="https://www.facebook.com"><i class="icon-facebook"></i> | Facebook</button>	    
+	    <a href="https://www.twitter.com/bitender"><button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter </button></a>
+	    <a href="https://www.facebook.com"><button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button></a>	    
 	  </div>
 	</div>
       </div>
